@@ -12,7 +12,12 @@ function App() {
   return (
     <div className="bg-primary">
       <Navbar />
-      <Container>
+      <Container style={{
+            backgroundImage: 'url(../public/Group-1.svg)',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            width: '100%'
+        }}>
         <Routes>
           <Route path="/" element={<Edtech />}/>
           <Route path="/buy-a-course" element={<BuyaCourse />}/>

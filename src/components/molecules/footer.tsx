@@ -40,7 +40,7 @@ export function Footer() {
             </div>
             <div className="mt-3">
                 <div className="mb-3">
-                    <h6 className="text-info">Company</h6>
+                    <h6 className="text-info text-center">Company</h6>
                 </div>
                 <div className="btn-group-vertical btn-group-sm">
                     <TextButton 
@@ -71,7 +71,7 @@ export function Footer() {
             </div>
             <div className="mt-3">
                 <div className="mb-3">
-                    <h6 className="text-info">Service</h6>
+                    <h6 className="text-info text-center">Service</h6>
                 </div>
                 <div className="btn-group-vertical btn-group-sm">
                     <TextButton 
@@ -110,22 +110,39 @@ export function Footer() {
             </div>
             <div className="mt-3">
                 <div className="mb-3">
-                    <h6 className="text-info">Workflow</h6>
+                    <h6 className="text-info text-center">Workflow</h6>
                 </div>
                 <div className="btn-group-vertical btn-group-sm">
-                    <h6><small>Startup</small></h6>
-                    <h6><small>Scalling</small></h6>
-                    <h6><small>Transformation</small></h6>
-                </div>
+                    <TextButton 
+                        text={"Startup"} 
+                        onClick={function (): void {throw new Error("Function not implemented.")} } 
+                    />
+                    <TextButton 
+                        text={"Scalling"} 
+                        onClick={function (): void {throw new Error("Function not implemented.")} } 
+                    />
+                    <TextButton 
+                        text={"Transformation"} 
+                        onClick={function (): void {throw new Error("Function not implemented.")} } 
+                    />                </div>
             </div>
             <div className="mt-3">
                 <div className="mb-3">
-                    <h6 className="text-info">Technology</h6>
+                    <h6 className="text-info text-center">Technology</h6>
                 </div>
                 <div className="btn-group-vertical btn-group-sm">
-                    <h6><small>React</small></h6>
-                    <h6><small>Node</small></h6>
-                    <h6><small>Angular</small></h6>
+                    <TextButton 
+                        text={"React"} 
+                        onClick={function (): void {throw new Error("Function not implemented.")} } 
+                    />
+                    <TextButton 
+                        text={"Node"} 
+                        onClick={function (): void {throw new Error("Function not implemented.")} } 
+                    />
+                    <TextButton 
+                        text={"Angular"} 
+                        onClick={function (): void {throw new Error("Function not implemented.")} } 
+                    />
                 </div>
             </div>
         </Container>

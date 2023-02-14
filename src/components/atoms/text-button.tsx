@@ -6,7 +6,7 @@ const TextButton: React.FC<{
   onClick: () => void 
 }> = ({ text, onClick }) => (
   <Button onClick={onClick} variant="link">
-    <small className='text-warning'>{text}</small>
+    <small className='text-warning text-start'>{text}</small>
   </Button>
 );
 

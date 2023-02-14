@@ -1,23 +1,23 @@
 import React from "react"
-import { Image } from "react-bootstrap"
+import { Card } from "react-bootstrap"
 
 const Card1: React.FC<{
-    title: string,
-    description: string,
-    logo: string
+    card1title: string,
+    card1description: string,
+    card1logo: string
 }> = ({
-    title,
-    description,
-    logo
+    card1title,
+    card1description,
+    card1logo
 }) => {
     return (
-        <div className="card bg-success text-white" style={{width: '15rem'}}>
-            <Image src={logo} className="card-img-top  mt-1 ml-1" style={{width: '5rem'}}/>
-            <div className="card-body">
-                <h5 className="card-title mb-2">{title}</h5>
-                <h6 className="card-text">{description}</h6>
-            </div>
-        </div>
+        <Card className="card bg-success text-white" style={{width: '15rem'}}>
+            <Card.Body>
+                <Card.Img src={card1logo} className="card-img-top  mb-3 bg-white" style={{width: '5rem'}} />
+                <Card.Title className="card-title mb-2">{card1title}</Card.Title>
+                <Card.Text className="card-text"><small>{card1description}</small></Card.Text>
+            </Card.Body>
+        </Card>
     )
 }
 
